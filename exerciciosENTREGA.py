@@ -80,6 +80,12 @@ print(f'I: {i}')
 print(f'O: {o}')
 print(f'U: {u}')
 
+nova = frase.replace('a','')
+nova1 = nova.replace('e','')
+nova2 = nova1.replace('i','')
+nova3 = nova2.replace('o','')
+nova4 = nova3.replace('u','')
+print(f'Esta é a frase sem nenhuma vogal: {nova4}')
 
    
 
@@ -164,7 +170,47 @@ if dataE is not None:
 # faça todo o tratamento necessário e retorne o resultado. 
 # Depois mostre na tela o resultado e a quantidade de letras foram retiradas da frase original.
 
+frase = input('Digite uma frase:  ').lower()
+c1 = frase.count('a')
+c2 = frase.count('e')
+c3 = frase.count('i')
+c4 = frase.count('o')
+c5 = frase.count('u')
+c6 = c1+c2+c3+c4+c5
 
+
+
+a=0
+e=0
+i=0
+o=0
+u=0
+
+for letra in frase:
+    if letra == 'a':
+        a+=1
+    if letra == 'e':
+        e+=1
+    if letra == 'i':
+        i+=1
+    if letra == 'o':
+        o+=1
+    if letra == 'u':
+        u+=1
+        
+print(f'A: {a}')
+print(f'E: {e}')
+print(f'I: {i}')
+print(f'O: {o}')
+print(f'U: {u}')
+
+nova = frase.replace('a','')
+nova1 = nova.replace('e','')
+nova2 = nova1.replace('i','')
+nova3 = nova2.replace('o','')
+nova4 = nova3.replace('u','')
+print(f'Esta é a frase sem nenhuma vogal: {nova4}')
+print(f'Foram removidas {c6} letras.')
 
 #06 - Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
    # "Telefonou para a vítima?"
